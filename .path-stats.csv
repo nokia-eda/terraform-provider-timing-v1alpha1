@@ -1,0 +1,15 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/apps/timing.eda.nokia.com,GET,AppGroup,app_group,true,true,false
+/apps/timing.eda.nokia.com/v1alpha1,GET,ResourceList,resource_list,true,true,false
+/apps/timing.eda.nokia.com/v1alpha1/_ui/{pathname},GET,UIResult,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients,DELETE,com.nokia.eda.timing.v1alpha1.NTPClientList,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients,GET,com.nokia.eda.timing.v1alpha1.NTPClientList,ntp_client_list,true,true,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients,POST,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,false,true
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/_deleted,GET,com.nokia.eda.timing.v1alpha1.NTPClient_DeletedResources,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},DELETE,Status,ntp_client,true,false,true
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},GET,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,true,true
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PATCH,Patch,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PUT,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,false,true
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/ntpclients,GET,com.nokia.eda.timing.v1alpha1.NTPClientList,,false,false,false

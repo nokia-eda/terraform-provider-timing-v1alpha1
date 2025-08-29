@@ -1,0 +1,38 @@
+provider:
+  name: timing
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/timing.eda.nokia.com
+      method: GET
+
+  ntp_client:
+    read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: GET
+
+  ntp_client_list:
+    read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/timing.eda.nokia.com/v1alpha1
+      method: GET
+
+resources:
+  ntp_client:
+    create:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients
+      method: POST
+    read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: GET
+    update:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: PUT
+    delete:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: DELETE

@@ -1,0 +1,90 @@
+app_group:
+  - read:
+      path: /apps/timing.eda.nokia.com
+      method: GET
+
+patch:
+  - update:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: PATCH
+
+resource_history:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1
+      method: GET
+
+resource_topology:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_topology
+      method: GET
+
+status:
+  - delete:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.timing.v1alpha1.ntp_client:
+  - create:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients
+      method: POST
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: GET
+  - update:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}
+      method: PUT
+
+com.nokia.eda.timing.v1alpha1.ntp_client_list:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients
+      method: GET
+  - delete:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients
+      method: DELETE
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/ntpclients
+      method: GET
+
+com.nokia.eda.timing.v1alpha1.ntp_client_deleted_resources:
+  - read:
+      path: /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/_deleted
+      method: GET
+
+totalPaths: 9
+totalSchemas: 33
+usedSchemas: 10
+unusedSchemas: 23
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - K8SPatchOp
+  - OverlayState
+  - Resource
+  - ResourceHistoryEntry
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoElemMetadata
+  - TopoLinkEndpoint
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeState
+  - TopoSchema
+  - Topology
+  - com.nokia.eda.timing.v1alpha1.NTPClient_DeletedResourceEntry
+  - com.nokia.eda.timing.v1alpha1.NTPClient_metadata
