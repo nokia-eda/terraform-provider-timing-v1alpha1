@@ -11,5 +11,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PATCH,Patch,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PUT,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,false,true
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_topology,POST,K8STopologyRequest,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/ntpclients,GET,com.nokia.eda.timing.v1alpha1.NTPClientList,,false,false,false
