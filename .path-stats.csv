@@ -8,7 +8,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/_deleted,GET,com.nokia.eda.timing.v1alpha1.NTPClient_DeletedResources,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},DELETE,Status,ntp_client,true,false,true
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},GET,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,true,true
-/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PATCH,Patch,,false,false,false
+/apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PATCH,com.nokia.eda.timing.v1alpha1.NTPClient,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name},PUT,com.nokia.eda.timing.v1alpha1.NTPClient,ntp_client,true,false,true
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/timing.eda.nokia.com/v1alpha1/namespaces/{namespace}/ntpclients/{name}/_targets,GET,IntentTargets,,false,false,false
